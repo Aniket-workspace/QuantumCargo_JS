@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="offices.css">
+  <title>Offices in Different Cities</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Offices in Different Cities</h1>
+
+    <div class="city-cards" id="cityCards">
+      <!-- Cities and Offices will be dynamically added here using JavaScript -->
+    </div>
+
+    <div class="office-details" id="officeDetails">
+      <!-- Office details will be dynamically added here using JavaScript -->
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  // Sample data: cities, offices, and their details
+  const data = [
+    {
+      city: "New York",
+      offices: [
+        { name: "Office 1", detail: "Details about Office 1", address: "123 Main St, New York", contact: "555-1234" },
+        { name: "Office 2", detail: "Details about Office 2", address: "456 Broadway, New York", contact: "555-5678" }
+      ],
+      image: "newyork.jpg"
+    },
+    {
+      city: "San Francisco",
+      offices: [
+        { name: "Office A", detail: "Details about Office A", address: "789 Market St, San Francisco", contact: "555-4321" },
+        { name: "Office B", detail: "Details about Office B", address: "101 California St, San Francisco", contact: "555-8765" }
+      ],
+      image: "sanfrancisco.jpg"
+    },
+    {
+      city: "London",
+      offices: [
+        { name: "Office X", detail: "Details about Office X", address: "23 Baker Street, London", contact: "+44 20 1234 5678" },
+        { name: "Office Y", detail: "Details about Office Y", address: "56 Oxford Street, London", contact: "+44 20 8765 4321" }
+      ],
+      image: "london.jpg"
+    }
+  ];
+
+  const cityCards = document.getElementById("cityCards");
+  const officeDetails = document.getElementById("officeDetails");
+
+  // Populate the cityCards element with city cards
+  data.forEach(cityData => {
+    const card = document.createElement("div");
+    card.classList.add("city-card");
+    card.innerHTML = `<img src="${cityData.image}" alt="${cityData.city}"><h3>${cityData.city}</h3>`;
+    card.addEventListener("click", () => showOfficeDetails(cityData));
+    cityCards.appendChild(card);
+  });
+
+  // Function to display office details when a city card is clicked
+  function showOfficeDetails(cityData) {
+    officeDetails.innerHTML = ""; // Clear previous details
+
+    cityData.offices.forEach(office => {
+      const officeBox = document.createElement("div");
+      officeBox.classList.add("office-box");
+      officeBox.innerHTML = `
+        <h2>${office.name}</h2>
+        <p>${office.detail}</p>
+        <p><strong>Address:</strong> ${office.address}</p>
+        <p><strong>Contact:</strong> ${office.contact}</p>
+      `;
+      officeDetails.appendChild(officeBox);
+    });
+
+    // Hide all office boxes and show the one for the selected city
+    document.querySelectorAll(".office-box").forEach(box => {
+      box.style.display = "none";
+    });
+    officeDetails.style.display = "block";
+  }
+});
+
+  </script>
+</body>
+</html>
