@@ -2,3 +2,60 @@
     margin: 0;
     padding: 0;
 }
+
+
+.div1 {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    padding: 6em 8em 6em;
+}
+.heading1{
+    font-size: xx-large;
+}
+.p1{
+    margin: 2em;
+    text-align: justify
+}
+.img1{
+    width: 30%;
+    transform: skew(0deg, 8deg);
+    box-shadow: orangered -1em -1em ;
+    margin: 0em 4em;
+}
+.div2{
+    text-align: center;
+    
+    justify-content: space-evenly;
+}
+.div3{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-block: 5em;
+}
+.div4{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.img2{
+    width: 10%;
+}
+.card{
+    box-shadow: rgb(91, 92, 92) 0em 0em 10px;
+    margin-inline: 1em;
+    border: 1em;
+    padding: 1em;
+    border-radius: 10px;
+}
+.card-img-top{
+    border: 1em;
+}
+.card-body{
+    color: white;
+    background-color: orangered;
+}
+
+
+  
