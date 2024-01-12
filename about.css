@@ -4,6 +4,27 @@
 }
 
 
+#servhead{
+    height: 30vh;
+    background: linear-gradient(
+        rgba(8, 28, 61, 0.8),
+        rgba(8, 28, 61, 0.8)
+      ),
+      url("images/heading.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+#servhead h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+}
+
 .div1 {
     display: flex;
     flex-wrap: nowrap;
