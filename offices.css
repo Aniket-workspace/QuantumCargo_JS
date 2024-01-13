@@ -1,49 +1,206 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  .city-card {
-    cursor: pointer;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    padding: 10px;
+    font-family: "poppins" sans-serif;
+}
+
+#offices {
+    max-width: 100%;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
-  }
-  
-  .city-card img {
-    max-width: 100px;
-    max-height: 100px;
-    margin-right: 10px;
-    border-radius: 8px;
-  }
-  
-  .office-box {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    display: none;
-  }
-  
-  .office-details h2 {
-    margin-bottom: 10px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .container {
-      max-width: 100%;
+    /* justify-content: space-between; */
+    background-color: rgb(8, 28, 61);
+    /* align-items: center; */
+}
+
+#office-left {
+    width: 20%;
+    background-color: rgb(8, 28, 61);
+    height: 100vh;
+}
+
+#close-btn {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 27px;
+}
+
+#left-title {
+    text-align: start;
+    color: white;
+    margin-top: 15px;
+    font-size: 25px;
+    margin-left: 10px;
+    color: #fd5b17;
+}
+
+#cities-name {
+    text-align: start;
+    color: white;
+    margin-top: 20px;
+}
+
+.tab-links {
+    font-size: 16px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tab-links:hover {
+    /* box-shadow: 10px 10px 10px black; */
+    transform: translateY(-1px);
+    transition: 0.5s;
+    /* background-color: rgb(145, 113, 71); */
+    color: rgb(185, 170, 170);
+}
+
+#office-right {
+    width: 80%;
+    background-color: white;
+    /* display: flex; */
+    /* justify-content: start; */
+}
+
+
+
+#open-btn {
+    margin-top: 10px;
+    margin-right: auto;
+    font-size: 27px;
+    margin-left: 10px;
+    visibility: hidden;
+}
+
+.cards {
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 35rem;
+    /* background-color: yellow; */
+    /* display: flex;
+    justify-content: center; */
+    /* position: relative; */
+}
+
+.card-main {
+    display: flex;
+    justify-content: space-evenly;
+    height: 29rem;
+    /* width: 40%; */
+}
+
+/* .card-main-content{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    height: 30%;
+    border: 1px solid black;
+} */
+
+
+.card-main-content {
+    /* background-color: green; */
+    width: 40%;
+    height: 32rem;
+    margin-top: 15px;
+    border: 1px solid black;
+    display: block;
+}
+
+.card-img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-details{
+    margin: 1rem;
+}
+
+.card-details h3{
+    font-size: 14px;
+    color: red;
+}
+
+.card-details h3 span{
+    color: black;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.office-btn{
+    display: block;
+    padding: 5px 9px;
+    background-color: #ff4700;
+    color: white;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* Responsive  */
+
+@media screen and (max-width: 700px){
+    .card-main{
+        display: block;
     }
-  }
-  
+    .card-main-content{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+.reduce-margin {
+    margin-bottom: 15px;
+}
+
+.tab-links {
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+/* .Mumbai {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.desc {
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.Mumbai img {
+    max-width: 100%;
+} */
