@@ -28,8 +28,10 @@
 .div1 {
     display: flex;
     flex-wrap: nowrap;
-    
-    padding: 6em 8em 6em;
+
+    justify-content: space-between;
+    margin-block: 6em;
+    margin-inline: 6em;
 }
 .heading1{
     font-size: xx-large;
@@ -42,9 +44,128 @@
     width: 30%;
     transform: skew(0deg, 8deg);
     box-shadow: orangered -1em -1em ;
-    margin: 0em 4em;
+    margin-inline: 2em;
 }
-.div2{
+
+.heading1 {
+    color: #FD5B17;
+}
+.heading1 span{
+    color: rgb(8, 28, 61);
+}
+@media screen and (max-width: 1400px) {
+    .div1{
+        flex-direction: row;
+        width: 90%;
+        margin-inline: 5em;
+    }
+    .img1{
+        width: 30%;
+        margin: auto;
+
+    }
+}
+@media screen and (max-width: 1200px) {
+    .div1{
+        flex-direction: row;
+        width: 95%;
+        margin-inline: 3em;
+    }
+    .img1{
+        width: 30%;
+        margin: auto;
+
+    }
+}
+@media screen and (max-width: 800px) {
+    .div1{
+        flex-direction: column;
+        width: 96%;
+        margin-inline: 2em;
+    }
+    .img1{
+        width: 30%;
+        margin: auto;
+
+    }
+    .teacher-sec-content{
+        display: block;
+        flex-wrap: wrap;
+        
+        justify-content: none;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .div1{
+        flex-direction: column;
+        width: 100%;
+        margin-inline: 0em;
+
+    }.img1{
+        width: 80%;
+        margin: auto;
+
+    }
+}
+@media screen and (max-width: 400px) {
+    .div1{
+        flex-direction: column;
+        width: 100%;
+        margin-inline: 0em;
+
+    }
+    .img1{
+        width: 80%;
+        margin-block: auto;
+    }
+    .teacher-sec-content{
+        display: block;
+        flex-direction: column;
+        justify-content: none;
+    }
+    
+}
+
+.div5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.div6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.card{
+    border-radius: 10px;
+    margin-block: 3em;
+    
+    border: none;
+    text-align: center;
+}
+
+
+.card-title{
+    color: #FD5B17;
+    text-align: center;
+}
+.card-text{
+    color: rgb(8, 28, 61);
+    text-align: justify;
+}
+.card-body{
+    text-align: center;
+}
+.card_icon img{
+    width: 6em;
+}
+
+/* .div2{
     text-align: center;
     
     justify-content: space-evenly;
@@ -76,7 +197,7 @@
 .card-body{
     color: white;
     background-color: orangered;
-}
+} */
 #marquee{
     
         height: 30vh;
@@ -89,11 +210,111 @@
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
-        align-items: center;
-        
-        
-        
-    
+        align-items: center;  
 }
 
+#marquee h1{
+    font-size: 35px;
+    color: white;
+    text-align: center; 
+}
+
+/* ........ feedback...........
+#feedback {
+    padding: 5rem 0;
+    background: rgba(243, 243, 243);
+    text-align: center;
+  }
   
+.feedback-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #555;
+  }
+.feedback-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+.customer-photo h2{
+    font-weight: 500;
+    font-size: 25px;
+    padding: 13px 0px 0px 0px;
+}
+  
+.feedback-box .feedback-text {
+    margin: 1rem 0;
+    color: #444;
+    
+  }
+  
+.feedback-box {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+.customer-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+  } */
+
+/* teachers section */
+#teacher-sec {
+    
+    margin-block: 5em;
+    margin-inline: 3em;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+.teacher-sec-title{
+    color: #FD5B17;
+}
+.teacher-sec-title span{
+    color: rgb(8, 28, 61);
+}
+  
+.teacher-sec-title {
+    text-align: center;
+ }
+.teacher-sec-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block: 4em;
+  }
+
+.teacher-sec-name{
+    font-size: larger;
+    color: rgb(8, 28, 61);;
+    
+}  
+.teacher-sec-text {
+    font-size: large;
+    color: rgb(17, 48, 98);;
+  }
+  
+.teacher-sec-box {
+   
+    text-align: center;
+    
+    
+  }
+  
+.teacher-sec-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+}
+.teacher-sec-photo img:hover {
+    box-shadow: 0px 0px 10px 4px rgb(130, 102, 52);
+    border: 2px solid rgb(197, 173, 129);
+}
