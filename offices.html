@@ -1,91 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="offices.css">
-  <title>Offices in Different Cities</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>office</title>
+    <link rel="stylesheet" href="offices.css">
+    <script src="offices.js"></script>
+    <script src="https://kit.fontawesome.com/3f4f8117ab.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <!-- <h1>offices</h1> -->
+    <div id="offices">
+        <div id="office-left">
+            <i class="fa-solid fa-list" style="color: #fd5b17;" id="close-btn" onclick="closeNav()"></i>
+            <div id="left-title" >QuatumCargo Network</div>
+            <div id="cities-name">
+                <p class="tab-links" onclick="opentab('m')">Mumbai</p>
+                <p class="tab-links" onclick="opentab('d')">Delhi</p>
+                <p class="tab-links" onclick="opentab('b')">Bengaluru</p>
+                <p class="tab-links" onclick="opentab('c')">Chennai</p>
+                <p class="tab-links" onclick="opentab('h')">Hyderabad</p>
+                <p class="tab-links" onclick="opentab('k')">Kolkata</p>
+            </div>
+        </div>
 
-  <div class="container">
-    <h1>Offices in Different Cities</h1>
+        <div id="office-right">
+            <span><i class="fa-solid fa-list" style="color: #fd5b17;" id="open-btn" onclick="openNav()"></i></span>
 
-    <div class="city-cards" id="cityCards">
-      <!-- Cities and Offices will be dynamically added here using JavaScript -->
+            <!-- Mumbai -->
+            <div class="cards tab-content active-tab" id="m">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_mumbai_office (1).jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Dispatch Nexus</span></h3>
+                            <h3 class="reduce-margin">Address : <span>draffer Avenue, Sonawala Rd, near Railway Station, Sonawala Industry Estate,
+                                Goregaon, Mumbai, Maharashtra 400063.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_mumbai_2.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Global Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Corporate Plaza, LBS Road, near Metro Station, Vikhroli West, Mumbai, Maharashtra 400079</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+            <!-- Delhi -->
+            <div class="cards tab-content " id="d">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_delhi.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Supply Nexus</span></h3>
+                            <h3 class="reduce-margin">Address : <span>QuantumCargo Business Center, Mathura Road, near Railway Station, Jasola, New Delhi, Delhi 110025</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_delhi_1.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Distribution Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>mid Square, Ring Road, near Metro Station, Rajouri Garden, New Delhi, Delhi 110027</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bengaluru -->
+            <div class="cards tab-content" id="b">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_benguluru.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Transport Center</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Tech boost, Old Madras Road, near IT Hub, KR Puram, Bengaluru, Karnataka 560036</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_banguluru_1.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Freight Bureau</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Business Avenue, Outer Ring Road, near Tech Park, Bellandur, Bengaluru, Karnataka 560103</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Chennai -->
+            <div class="cards tab-content" id="c">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_chennai.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Warehousing Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>MSD Park, OMR, near IT Park, Sholinganallur, Chennai, Tamil Nadu 600119.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_chennai_1.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Dispatch Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Corporate Center, Mount Poonamallee Road, near Metro Station, Porur, Chennai, Tamil Nadu 600116</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Hyderabad -->
+            <div class="cards tab-content" id="h">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_hydrabad.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Logistics Bureau</span></h3>
+                            <h3 class="reduce-margin">Address : <span>QuantumCargo Business Plaza, HITEC City, near Cyber Towers, Madhapur, Hyderabad, Telangana 500081.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_hydrabad_1.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Logistics Bureau</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Corporate Junction, Gachibowli Road, near IT Park, Gachibowli, Hyderabad, Telangana 500032.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Kolkata -->
+            <div class="cards tab-content" id="k">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_kolkata.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Logistics Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>QuantumCargo Business net, EM Bypass, near Metro Station, Salt Lake City, Kolkata, West Bengal 700091.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="images/new_kolkata_1.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Logistics Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Netaji Junction, Gachibowli Road, near IT Park, Gachibowli, Hyderabad, Telangana 500032.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
 
-    <div class="office-details" id="officeDetails">
-      <!-- Office details will be dynamically added here using JavaScript -->
-    </div>
-  </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-  // Sample data: cities, offices, and their details
-  const data = [
-    {
-      city: "New York",
-      offices: [
-        { name: "Office 1", detail: "Details about Office 1", address: "123 Main St, New York", contact: "555-1234" },
-        { name: "Office 2", detail: "Details about Office 2", address: "456 Broadway, New York", contact: "555-5678" }
-      ],
-      image: "newyork.jpg"
-    },
-    {
-      city: "San Francisco",
-      offices: [
-        { name: "Office A", detail: "Details about Office A", address: "789 Market St, San Francisco", contact: "555-4321" },
-        { name: "Office B", detail: "Details about Office B", address: "101 California St, San Francisco", contact: "555-8765" }
-      ],
-      image: "sanfrancisco.jpg"
-    },
-    {
-      city: "London",
-      offices: [
-        { name: "Office X", detail: "Details about Office X", address: "23 Baker Street, London", contact: "+44 20 1234 5678" },
-        { name: "Office Y", detail: "Details about Office Y", address: "56 Oxford Street, London", contact: "+44 20 8765 4321" }
-      ],
-      image: "london.jpg"
-    }
-  ];
-
-  const cityCards = document.getElementById("cityCards");
-  const officeDetails = document.getElementById("officeDetails");
-
-  // Populate the cityCards element with city cards
-  data.forEach(cityData => {
-    const card = document.createElement("div");
-    card.classList.add("city-card");
-    card.innerHTML = `<img src="${cityData.image}" alt="${cityData.city}"><h3>${cityData.city}</h3>`;
-    card.addEventListener("click", () => showOfficeDetails(cityData));
-    cityCards.appendChild(card);
-  });
-
-  // Function to display office details when a city card is clicked
-  function showOfficeDetails(cityData) {
-    officeDetails.innerHTML = ""; // Clear previous details
-
-    cityData.offices.forEach(office => {
-      const officeBox = document.createElement("div");
-      officeBox.classList.add("office-box");
-      officeBox.innerHTML = `
-        <h2>${office.name}</h2>
-        <p>${office.detail}</p>
-        <p><strong>Address:</strong> ${office.address}</p>
-        <p><strong>Contact:</strong> ${office.contact}</p>
-      `;
-      officeDetails.appendChild(officeBox);
-    });
-
-    // Hide all office boxes and show the one for the selected city
-    document.querySelectorAll(".office-box").forEach(box => {
-      box.style.display = "none";
-    });
-    officeDetails.style.display = "block";
-  }
-});
-
-  </script>
 </body>
+
 </html>
