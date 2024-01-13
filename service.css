@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#servhead{
+    height: 30vh;
+    background: linear-gradient(
+        rgba(8, 28, 61, 0.8),
+        rgba(8, 28, 61, 0.8)
+      ),
+      url("images/heading.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+#servhead h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+}
+.card{
+    margin: 2em;
+}
+.card-body{
+    display: flex;
+    
+}
+.card-text{
+    text-align: justify;
+    margin: 1em;
+    margin-right: 2em;
+}
+.card-title{
+    margin: 1em;
+}
+.card-img1{
+    margin-right: 2em;
+    margin: 1em;
+}
+#txt{
+    margin: 0;
+    margin-right: 1em;
+}

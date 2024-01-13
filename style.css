@@ -2,3 +2,169 @@
     margin: 0;
     padding: 0;
 }
+body{
+    color: rgb(8, 28, 61);
+}
+
+/* navbar */
+.nav{
+    background-color: rgb(8, 28, 61);
+}
+
+
+/* home-area */
+.home-area{
+    display: flex;
+}
+
+.home1 {
+    height: 31rem;
+    background: linear-gradient(
+        rgba(8, 28, 61, 0.8),
+        rgba(8, 28, 61, 0.8)
+      ),
+      url("images/home3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 5em 8em 5em 15em;
+    width: 60%;
+  }
+
+  .home1 a{
+    background-color: #FD5B17;
+  }
+
+  .home1 H1{
+    font-size: 50px;
+  }
+
+  .home2 {
+    height: 31rem;
+    background: url("images/home_boy.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 39.99%;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .home-area{
+        display: block;
+    }
+    .home1{
+        width: 100%;
+        padding: 5em;
+        height: 30rem;
+    }
+    .home1 H1{
+        font-size: 30px;
+      }
+    .home2{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+  
+    .home1{
+        padding: 5em;
+        height: 30rem;
+    }
+    .home1 H1{
+        font-size: 40px;
+      }
+    .home2{
+        height: 30rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+  
+    .home1{
+        padding: 5em;
+        height: 30rem;
+    }
+    .home1 H1{
+        font-size: 40px;
+      }
+    .home2{
+        height: 30rem;
+    }
+  }
+
+
+  /* after-home */
+
+  .after-home{
+    display: flex;
+    margin-top:5em;
+    width: 100%;
+  }
+
+  .after-home-img{
+    padding: 0 2em;
+    width: 50%;
+  }
+
+  .after-home-text{
+    width: 49%;
+    padding:1em 5em;
+    text-align: justify;
+  }
+
+  .after-home-text h4{
+    color: #FD5B17;
+  }
+  .after-home-text span{
+    color: rgb(8, 28, 61);
+  }
+
+  @media screen and (max-width: 600px) {
+    .after-home{
+        display: block;
+        margin-top:5em;
+        width: 20px;
+      }
+      .after-home-img{
+        padding: 0 2em;
+        width: 100%;
+      }
+    .home1 H1{
+        font-size: 30px;
+      }
+    .home2{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+  
+    .home1{
+        padding: 5em;
+        height: 30rem;
+    }
+    .home1 H1{
+        font-size: 40px;
+      }
+    .home2{
+        height: 30rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+  
+    .home1{
+        padding: 5em;
+        height: 30rem;
+    }
+    .home1 H1{
+        font-size: 40px;
+      }
+    .home2{
+        height: 30rem;
+    }
+  }
