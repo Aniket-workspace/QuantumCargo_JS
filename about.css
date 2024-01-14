@@ -45,6 +45,11 @@
     text-align: justify
 }
 
+.p1:hover{
+    transform: translateY(-3px);
+    transition: 0.5s;
+}
+
 .img1{
     width: 30%;
     transform: skew(0deg, 8deg);
@@ -164,6 +169,11 @@
     
     border: none;
     text-align: center;
+}
+
+.card :hover{
+    transform: translateY(-1px);
+    transition: 0.5s;
 }
 
 .card-title{
