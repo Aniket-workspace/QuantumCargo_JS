@@ -6,13 +6,13 @@
 
 #offices {
     max-width: 100%;
-    min-height: 100vh;
+    height: 71%;
     display: flex;
-    /* justify-content: space-between; */
-    background-color: rgb(8, 28, 61);
-    /* align-items: center; */
 }
 
+
+
+/* Office Left */
 #office-left {
     width: 20%;
     background-color: rgb(8, 28, 61);
@@ -31,9 +31,13 @@
     text-align: start;
     color: white;
     margin-top: 15px;
-    font-size: 25px;
+    font-size: 35px;
     margin-left: 10px;
     color: #fd5b17;
+}
+
+#left-title:hover {
+    color: #df4503;
 }
 
 #cities-name {
@@ -43,27 +47,26 @@
 }
 
 .tab-links {
-    font-size: 16px;
+    font-size: 30px;
     margin-bottom: 25px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .tab-links:hover {
-    /* box-shadow: 10px 10px 10px black; */
     transform: translateY(-1px);
     transition: 0.5s;
-    /* background-color: rgb(145, 113, 71); */
     color: rgb(185, 170, 170);
 }
 
+
+
+
+/* Office Right */
 #office-right {
     width: 80%;
     background-color: white;
-    /* display: flex; */
-    /* justify-content: start; */
 }
-
 
 
 #open-btn {
@@ -76,37 +79,26 @@
 
 .cards {
     width: 100%;
-    /* border: 1px solid black; */
     height: 35rem;
-    /* background-color: yellow; */
-    /* display: flex;
-    justify-content: center; */
-    /* position: relative; */
 }
 
 .card-main {
     display: flex;
     justify-content: space-evenly;
     height: 29rem;
-    /* width: 40%; */
 }
 
-/* .card-main-content{
-    display: flex;
-    justify-content: space-evenly;
-    max-width: 100%;
-    height: 30%;
-    border: 1px solid black;
-} */
-
-
 .card-main-content {
-    /* background-color: green; */
     width: 40%;
-    height: 32rem;
-    margin-top: 15px;
+    height: 38rem;
+    margin-top: -15px;
     border: 1px solid black;
     display: block;
+    transition: .2s;
+}
+
+.card-main-content:hover{
+    transform: translateY(-2px);
 }
 
 .card-img {
@@ -122,52 +114,37 @@
     display: block;
 }
 
-.card-details{
+.card-details {
     margin: 1rem;
 }
 
-.card-details h3{
-    font-size: 14px;
-    color: red;
+.card-details h3 {
+    font-size: 17px;
+    color: #fd5b17;
 }
 
-.card-details h3 span{
+.card-details h3 span {
     color: black;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: normal;
 }
 
-.office-btn{
+.office-btn {
     display: block;
     padding: 5px 9px;
     background-color: #ff4700;
     color: white;
     border: none;
-    /* border-radius: 5px; */
     cursor: pointer;
     margin-top: 10px;
+    transition: 0.5s;
 }
 
-
-/* Responsive  */
-
-@media screen and (max-width: 700px){
-    .card-main{
-        display: block;
-    }
-    .card-main-content{
-        margin: auto;
-        margin-bottom: 20px;
-        width: 90%;
-    }
+.office-btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 1px 1px 1px black;
+    color: wheat
 }
-
-
-
-
-
-
-
 
 .reduce-margin {
     margin-bottom: 15px;
@@ -185,22 +162,228 @@
     display: block;
 }
 
-/* .Mumbai {
-    width: 40%;
-    height: 40%;
+
+/* Responsive  */
+
+/* for mobile S */
+@media screen and (max-width: 320px) {
+    .card-main {
+        display: block;
+    }
+
+    .card-main-content {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    #office-left {
+        width: 20%;
+        background-color: rgb(8, 28, 61);
+        height: 270vh;
+    }
+
+    #left-title {
+        font-size: 20px;
+    }
+
+    .card-details h3 {
+        font-size: 15px;
+        color: #fd5b17;
+    }
+
+    .card-details h3 span {
+        color: black;
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    .tab-links {
+        margin-bottom: 2.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* /for mobile M */
+@media screen and (max-width: 375px){
+    .card-main {
+        display: block;
+    }
+
+    .card-main-content {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    #office-left {
+        width: 20%;
+        background-color: rgb(8, 28, 61);
+        height: 270vh;
+    }
+
+    #left-title {
+        font-size: 23px;
+    }
+
+    .card-details h3 {
+        font-size: 15px;
+        color: #fd5b17;
+    }
+
+    .card-details h3 span {
+        color: black;
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    .tab-links {
+        margin-bottom: 2.5rem;
+        font-size: 1.2rem;
+    }
+}   
+
+/* for mobile L  */
+@media screen and (max-width: 425px) and (min-width: 375px){
+    .card-main {
+        display: block;
+    }
+
+    .card-main-content {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    #office-left {
+        width: 20%;
+        background-color: rgb(8, 28, 61);
+        height: 270vh;
+    }
+
+    #left-title {
+        font-size: 23px;
+    }
+
+    .card-details h3 {
+        font-size: 15px;
+        color: #fd5b17;
+    }
+
+    .card-details h3 span {
+        color: black;
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    .tab-links {
+        margin-bottom: 2.5rem;
+        font-size: 1.2rem;
+    }
+} 
+
+
+/* for tablet */
+@media screen and (max-width: 768px) and (min-width: 425px){
+    .card-main {
+        display: block;
+    }
+
+    .card-main-content {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    #office-left {
+        width: 20%;
+        background-color: rgb(8, 28, 61);
+        height: 223vh;
+    }
+
+    #left-title {
+        font-size: 28px;
+    }
+
+    .card-details h3 {
+        font-size: 15px;
+        color: #fd5b17;
+    }
+
+    .card-details h3 span {
+        color: black;
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    .tab-links {
+        margin-bottom: 2.5rem;
+        font-size: 1.5rem;
+    }
+} 
+
+/* footer */
+#servhead{
+    height: 20vh;
+    background: linear-gradient(
+        rgba(8, 28, 61, 0.9),
+        rgba(8, 28, 61, 0.9)
+      ),
+      url("images/heading.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 0em;
+
     display: flex;
-    justify-content: center;
-    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer{
+    width: 100%;
+    padding: 2em;
+  }
+
+  .footer_text{
+    width: 80%;
+
+  }
+  .footer_icon{
+    width: 19%;
+    text-align: right;
+
+  }
+
+  @media screen and (max-width: 600px) {
+    #servhead{
+      height: 19vh;
+      
+    }
+    .footer_text p{
+      font-size: 10px;
+    }
+
+    .footer_icon img{
+      width: 1em;
+    }
+   
+  }
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+    #servhead{
+      height: 17vh;
+      
+    } 
 }
 
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  #servhead{
+    height: 16vh;
+    
+  }
 
-.desc {
-    margin-top: 30px;
-    margin-left: 20%;
-    margin-right: 20%;
 }
-
-
-.Mumbai img {
-    max-width: 100%;
-} */
