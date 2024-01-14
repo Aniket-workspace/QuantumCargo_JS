@@ -4,6 +4,7 @@
 }
 
 
+/* Title Section*/
 #servhead{
     height: 30vh;
     background: linear-gradient(
@@ -14,10 +15,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-    
-    
+      
 }
+
 #servhead h1{
     font-size: 50px;
     color: white;
@@ -25,6 +25,8 @@
     padding-top: 1em;
 }
 
+
+/* Our Competancy section */
 .div1 {
     display: flex;
     flex-wrap: nowrap;
@@ -33,13 +35,16 @@
     margin-block: 6em;
     margin-inline: 6em;
 }
+
 .heading1{
     font-size: xx-large;
 }
+
 .p1{
     margin: 2em;
     text-align: justify
 }
+
 .img1{
     width: 30%;
     transform: skew(0deg, 8deg);
@@ -50,9 +55,13 @@
 .heading1 {
     color: #FD5B17;
 }
+
 .heading1 span{
     color: rgb(8, 28, 61);
 }
+
+
+/* Media Query section */
 @media screen and (max-width: 1400px) {
     .div1{
         flex-direction: row;
@@ -65,6 +74,7 @@
 
     }
 }
+
 @media screen and (max-width: 1200px) {
     .div1{
         flex-direction: row;
@@ -77,6 +87,7 @@
 
     }
 }
+
 @media screen and (max-width: 800px) {
     .div1{
         flex-direction: column;
@@ -96,6 +107,7 @@
     }
     
 }
+
 @media screen and (max-width: 600px) {
     .div1{
         flex-direction: column;
@@ -108,6 +120,7 @@
 
     }
 }
+
 @media screen and (max-width: 400px) {
     .div1{
         flex-direction: column;
@@ -127,6 +140,8 @@
     
 }
 
+
+/* Mission Vision Values Section */
 .div5{
     display: flex;
     flex-direction: row;
@@ -134,6 +149,7 @@
     justify-content: space-evenly;
     
 }
+
 .div6{
     display: flex;
     flex-direction: row;
@@ -141,6 +157,7 @@
     justify-content: space-evenly;
 
 }
+
 .card{
     border-radius: 10px;
     margin-block: 3em;
@@ -149,123 +166,27 @@
     text-align: center;
 }
 
-
 .card-title{
     color: #FD5B17;
     text-align: center;
 }
+
 .card-text{
     color: rgb(8, 28, 61);
     text-align: justify;
 }
+
 .card-body{
     text-align: center;
 }
+
 .card_icon img{
     width: 6em;
 }
 
-/* .div2{
-    text-align: center;
-    
-    justify-content: space-evenly;
-}
-.div3{
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    margin-block: 5em;
-}
-.div4{
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-}
-.img2{
-    width: 10%;
-}
-.card{
-    box-shadow: rgb(91, 92, 92) 0em 0em 10px;
-    margin-inline: 1em;
-    border: 1em;
-    padding: 1em;
-    border-radius: 10px;
-}
-.card-img-top{
-    border: 1em;
-}
-.card-body{
-    color: white;
-    background-color: orangered;
-} */
-#marquee{
-    
-        height: 30vh;
-        background: linear-gradient(
-            rgba(8, 28, 61, 0.8),
-            rgba(8, 28, 61, 0.8)
-          ),
-          url("images/heading.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;  
-}
 
-#marquee h1{
-    font-size: 35px;
-    color: white;
-    text-align: center; 
-}
 
-/* ........ feedback...........
-#feedback {
-    padding: 5rem 0;
-    background: rgba(243, 243, 243);
-    text-align: center;
-  }
-  
-.feedback-title {
-    text-align: center;
-    font-size: 2.8rem;
-    font-weight: 400;
-    color: #555;
-  }
-.feedback-content {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    padding: 1rem;
-  }
-.customer-photo h2{
-    font-weight: 500;
-    font-size: 25px;
-    padding: 13px 0px 0px 0px;
-}
-  
-.feedback-box .feedback-text {
-    margin: 1rem 0;
-    color: #444;
-    
-  }
-  
-.feedback-box {
-    text-align: center;
-    padding: 1rem;
-  }
-  
-.customer-photo img {
-    display: block;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    margin: auto;
-  } */
-
-/* teachers section */
+/* Our Team section */
 #teacher-sec {
     
     margin-block: 5em;
@@ -318,3 +239,109 @@
     box-shadow: 0px 0px 10px 4px rgb(130, 102, 52);
     border: 2px solid rgb(197, 173, 129);
 }
+
+/* Marquee section */
+#marquee{
+    
+    height: 30vh;
+    background: linear-gradient(
+        rgba(8, 28, 61, 0.8),
+        rgba(8, 28, 61, 0.8)
+      ),
+      url("images/heading.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;  
+}
+
+#marquee h1{
+font-size: 35px;
+color: white;
+text-align: center; 
+}
+
+
+
+/* .div2{
+    text-align: center;
+    
+    justify-content: space-evenly;
+}
+.div3{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-block: 5em;
+}
+.div4{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.img2{
+    width: 10%;
+}
+.card{
+    box-shadow: rgb(91, 92, 92) 0em 0em 10px;
+    margin-inline: 1em;
+    border: 1em;
+    padding: 1em;
+    border-radius: 10px;
+}
+.card-img-top{
+    border: 1em;
+}
+.card-body{
+    color: white;
+    background-color: orangered;
+} */
+
+
+/* ........ feedback...........
+#feedback {
+    padding: 5rem 0;
+    background: rgba(243, 243, 243);
+    text-align: center;
+  }
+  
+.feedback-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #555;
+  }
+.feedback-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+.customer-photo h2{
+    font-weight: 500;
+    font-size: 25px;
+    padding: 13px 0px 0px 0px;
+}
+  
+.feedback-box .feedback-text {
+    margin: 1rem 0;
+    color: #444;
+    
+  }
+  
+.feedback-box {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+.customer-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+} */
+
