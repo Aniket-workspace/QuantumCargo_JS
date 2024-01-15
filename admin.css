@@ -121,6 +121,19 @@
 .card{
   margin-block: 2rem;
   border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.card-img-top{
+  height: 13rem;
+}
+
+.card-body h5{
+  color: #fd5b17;
+}
+
+.card-text table {
+  color: rgb(8, 28, 61);
 }
 
 
