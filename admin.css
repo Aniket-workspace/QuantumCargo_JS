@@ -72,3 +72,58 @@
   transform: scaleX(1);
   transform-origin: left;
 }
+
+
+/* Navbar */
+
+.div1 .nav_bar1{
+  margin-left: 0%;
+  margin-top: 1rem;
+}
+.div1 .nav_bar1 .nav-links{
+  background-color: #fff;
+  margin-left: 0%;
+  
+}
+
+.div1 .nav_bar1 .nav-links li a {
+  color: rgb(8, 28, 61);
+  
+}
+
+
+/* 
+.main{
+  display: inline-block;
+} 
+*/
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active-tab {
+  display: block;
+} 
+
+
+/* card */
+.div5{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+.div1{
+  flex-wrap: wrap;
+}
+.card{
+  margin-block: 2rem;
+  border-radius: 10px;
+}
+
+
+table{
+  width: 100%;
+}
