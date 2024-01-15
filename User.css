@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins" sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+.horizontal-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    background-color: red;
+    padding: 1rem;
+}
+
+.horizontal-panel a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    /* text-decoration: none; */
+}
+
+.main{
+    display: inline-block;
+
+}
+
+.func-1{
+    width: 137rem;
+    background-color: yellow;
+    margin-bottom: 2rem;
+    height: 55rem;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
