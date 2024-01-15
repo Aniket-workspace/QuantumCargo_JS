@@ -198,45 +198,44 @@
 
 /* Our Team section */
 #teacher-sec {
-    
     margin-block: 5em;
     margin-inline: 3em;
     text-align: center;
     justify-content: space-around;
-  }
+}
 
 .teacher-sec-title{
     color: #FD5B17;
 }
+
 .teacher-sec-title span{
     color: rgb(8, 28, 61);
 }
   
 .teacher-sec-title {
     text-align: center;
- }
+}
+
 .teacher-sec-content {
     display: flex;
     justify-content: space-evenly;
     margin-block: 4em;
-  }
+}
 
 .teacher-sec-name{
     font-size: larger;
-    color: rgb(8, 28, 61);;
+    color: rgb(8, 28, 61);
     
 }  
+
 .teacher-sec-text {
     font-size: large;
-    color: rgb(17, 48, 98);;
-  }
+    color: rgb(17, 48, 98);
+}
   
 .teacher-sec-box {
-   
     text-align: center;
-    
-    
-  }
+}
   
 .teacher-sec-photo img {
     display: block;
@@ -245,10 +244,12 @@
     border-radius: 50%;
     margin: auto;
 }
+
 .teacher-sec-photo img:hover {
-    box-shadow: 0px 0px 10px 4px rgb(130, 102, 52);
+    box-shadow: 0px 0px 10px 4px rgb(255, 171, 25);
     border: 2px solid rgb(197, 173, 129);
 }
+
 
 /* Marquee section */
 #marquee{
