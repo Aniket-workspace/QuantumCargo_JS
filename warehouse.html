@@ -1,146 +1,606 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-   <title>Warehouse </title> 
-    <link rel="stylesheet" href="warehouse.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="warehouse.js"></script>
-   </head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Warehouse </title>
+  <link rel="stylesheet" href="warehouse.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="warehouse.js"></script>
+</head>
+
 <body>
   <div class="nav_bar">
     <ul class="nav-links">
-        <li class="center"><a href="admin.html">Transport</a></li>
-        <li class="center"><a href="#">Warehouse</a></li>
-        <li class="center"><a>Log Out</a></li>
-      </ul>
+      <li class="center"><a href="admin.html">Transport</a></li>
+      <li class="center"><a href="#">Warehouse</a></li>
+      <li class="center" style="color:white;"><a>Log Out</a></li>
+    </ul>
   </div>
   <div>
-   <!-- Dropdown -->
+    <!-- Dropdown -->
     <li class="hov">Choose a Location
       <ul class="main">
-        <li href="#" onclick="opentab('div1')">Pune</li>
-        <li href="#" onclick="opentab('div2')">Mumbai</li>
-        <li href="#" onclick="opentab('div3')">Dehli</li>
-        <li href="#" onclick="opentab('div4')">Bengaluru</li>
-        <li href="#" onclick="opentab('div1')">Chennai</li>
-        <li href="#" onclick="opentab('div2')">Hyderabad</li>
+        <li href="#" onclick="opentab('Pune')">Pune</li>
+        <li href="#" onclick="opentab('Mumbai')">Mumbai</li>
+        <li href="#" onclick="opentab('Dehli')">Dehli</li>
+        <li href="#" onclick="opentab('Bengaluru')">Bengaluru</li>
+        <li href="#" onclick="opentab('Chennai')">Chennai</li>
+        <li href="#" onclick="opentab('Hyderabad')">Hyderabad</li>
       </ul>
     </li>
   </div>
   <div class="main1">
-    <div class="tab-content active-tab" id="div1">
-          <div class="card" style="width: 18rem;">
-            <img src="images/Pune1_warehouse.jpg" class="card-img-top" >
-            <div class="card-body">
-              <h5 class="card-title">Wagheshwar Warehouse </h5>
-              <p class="card-text">
-                <table>
-                  <tr>
-                    <td>Location:</td>
-                    <td>Chakan</td>
-                  </tr>
-                  <tr>
-                    <td>Area:</td>
-                    <td>25,000 Sq ft</td>
-                  </tr>
-                  <tr>
-                    <td>storage-Capacity :</td>
-                    <td>20,000 tons</td>
-                  </tr>
-                  <tr>
-                    <td>storage-type :</td>
-                    <td>Normal, Cold</td>
-                  </tr>
-                </table>
-              </p>
-            </div>
+    <div class="tab-content active-tab" id="Pune">
+      <div class="div5">
+        <div class="card" style="width: 18rem;">
+          <img src="images/Pune1_warehouse.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Maharaja Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Wagholi</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>15,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>13,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>8,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal</td>
+              </tr>
+            </table>
+            </p>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img src="images/Pune2-warehouse.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Viraj Warehouse </h5>
-              <p class="card-text">
-                <table>
-                  <tr>
-                    <td>Location:</td>
-                    <td>Chakan</td>
-                  </tr>
-                  <tr>
-                    <td>Area:</td>
-                    <td>25,000 Sq ft</td>
-                  </tr>
-                  <tr>
-                    <td>storage-Capacity :</td>
-                    <td>20,000 tons</td>
-                  </tr>
-                  <tr>
-                    <td>storage-type :</td>
-                    <td>Normal, Cold</td>
-                  </tr>
-                </table>
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="images/Pune3-warehouse.jpg" class="card-img-top" >
-            <div class="card-body">
-              <h5 class="card-title">Pioneer Warehouse</h5>
-              <p class="card-text">
-                <table>
-                  <tr>
-                    <td>Location:</td>
-                    <td>Chakan</td>
-                  </tr>
-                  <tr>
-                    <td>Area:</td>
-                    <td>25,000 Sq ft</td>
-                  </tr>
-                  <tr>
-                    <td>storage-Capacity :</td>
-                    <td>20,000 tons</td>
-                  </tr>
-                  <tr>
-                    <td>storage-type :</td>
-                    <td>Normal, Cold</td>
-                  </tr>
-                </table>
-              </p>
-            </div>
         </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/Pune2-warehouse.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Janta Raja Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Chakan</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>28,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>24,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>13,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/Pune3-warehouse.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Pioneer Warehouse</h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Narayanpur</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>22,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>18,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>10,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="func-1 tab-content" id="div2">
-        <h1>div 2</h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique harum perspiciatis
-        pariatur, iure architecto praesentium suscipit corporis perferendis repudiandae officia eum quis deserunt,
-        nulla at dolorem totam optio quidem sed minus sint itaque inventore error aliquam id! Ratione nostrum quos
-        nobis aperiam? Necessitatibus consectetur, doloribus animi recusandae officia modi nostrum quis suscipit
-        autem eos mollitia quia, voluptatem placeat at dicta est illo ad non reiciendis atque. Quae, quasi. Error,
-        omnis ab animi numquam dolores, distinctio magni accusantium corporis architecto labore mollitia vero
-        provident voluptatum iste! Ut quibusdam facere possimus, sint accusantium laborum veritatis quos molestiae
-        quidem itaque facilis aliquam sed.
+    <div class="func-1 tab-content" id="Mumbai">
+      <div class="div5">
+        <div class="card" style="width: 18rem;">
+          <img src="images/mumbai1_warehouse.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Viraj Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Andheri</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>18,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>15,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>8,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/mumbai2_warehouse.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chaitanya Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Borivali</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>25,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>23,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>10,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/mumbai3_warehouse.jpg" class="card-img-top" height="193rem">
+          <div class="card-body">
+            <h5 class="card-title">Yashraj Warehouse</h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Kurla</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>28,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>24,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>15,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="func-1 tab-content" id="div3">
-        <h1>div 3</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate fugit officia
-        exercitationem sint architecto deleniti et dolores consequatur, perferendis tempora eos. Ratione saepe
-        deserunt nesciunt dolorum cupiditate natus nobis asperiores eius quaerat laborum earum accusamus voluptatem
-        officiis vero perspiciatis, facere sit esse tempore quisquam nemo! Debitis aut odio excepturi dolorum sint
-        ab eaque laborum facere. Aut, nostrum facere numquam eos, at, possimus error voluptatum aspernatur quae illo
-        accusamus qui. Ducimus maxime facilis ea cupiditate veritatis earum minus eveniet distinctio nesciunt ipsum
-        praesentium laborum dicta, velit rem expedita sint in quisquam corporis dolorum modi sequi ipsa amet ut
-        fugiat. Porro?
+    <div class="func-1 tab-content" id="Dehli">
+      <div class="div5">
+        <div class="card" style="width: 18rem;">
+          <img src="images/Dehli1-warehouse.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Ghanshyam Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Mundka</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>40,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>35,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>21,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/Dehli2-warehouse.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">RK Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Asola</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>30,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>26,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>13,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/Dehli3-warehouse.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Storebox Warehouse</h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Kanjhawala</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>21,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>17,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>8,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="func-1 tab-content" id="div4">
-        <h1>div 4</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas at dignissimos ipsam optio
-        labore aliquid, veritatis adipisci. Quae voluptates adipisci recusandae tempora doloremque quia. Natus vitae
-        impedit maxime adipisci optio porro reprehenderit doloremque aut harum eum neque, sapiente itaque nesciunt
-        veritatis exercitationem numquam velit quia officiis! Reiciendis, similique nobis cumque aspernatur eius
-        enim odio ad amet. Excepturi optio doloribus distinctio perspiciatis cumque vel illo placeat veniam
-        laboriosam odit, nesciunt esse voluptate sed recusandae quos quidem error laborum dolorum? Sequi obcaecati
-        officiis dolore ea esse neque, praesentium harum dolores. Voluptate aut voluptates dignissimos commodi
-        doloremque id modi et laboriosam ipsam tenetur!
+    <div class="func-1 tab-content" id="Bengaluru">
+      <div class="div5">
+        <div class="card" style="width: 18rem;">
+          <img src="images/bengaluru1_warehouse.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Balaji Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Indira Nagar</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>20,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>16,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>6,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/Bengaluru2_warehouse.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Palms Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Hebbal</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>32,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>27,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>11,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/Bengaluru3_warehouse.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Arora Warehouse</h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Bidrahalli</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>32,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>28,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>16,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+    <div class="func-1 tab-content" id="Chennai">
+      <div class="div5">
+        <div class="card" style="width: 18rem;">
+          <img src="images/Channai1_warehouse.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Central Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Perambur</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>30,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>25,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>10,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/Channai2_warehouse.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ideal Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Egmore</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>36,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>32,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>20,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/Channai3_warehouse.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Chennai Warehouse</h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Tondiarpet</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>27,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>22,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>13,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="func-1 tab-content" id="Hyderabad">
+      <div class="div5">
+        <div class="card" style="width: 18rem;">
+          <img src="images/hyadrabad1_warehouse.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Snowman Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Karwan</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>30,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>24,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>10,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/hyadrabad2_warehouse.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">WareIQ Warehouse </h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Nampally</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>36,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>32,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>20,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/hyadrabad3_warehouse.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">ACC Warehouse</h5>
+            <p class="card-text">
+            <table>
+              <tr>
+                <td>Location:</td>
+                <td>Amberpet</td>
+              </tr>
+              <tr>
+                <td>Area:</td>
+                <td>35,000 Sq ft</td>
+              </tr>
+              <tr>
+                <td>Capacity :</td>
+                <td>30,000 tons</td>
+              </tr>
+              <tr>
+                <td>Availability :</td>
+                <td>18,000 tons</td>
+              </tr>
+              <tr>
+                <td>storage-type :</td>
+                <td>Normal, Cold</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
