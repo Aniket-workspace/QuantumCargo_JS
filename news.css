@@ -28,34 +28,25 @@
 
 /* News Section */
 .div1{
-    display: flex;
-    border: solid black 1px;
-    margin-block: 2em;
-    margin-inline: 3em;
-    padding: 1em;
-    border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.div2{
-    margin-inline: 1em;
+.card{
+  margin-block: 2em;
+  text-align: justify;
+  border: none;
 }
-
-.div3 h5{
+.card-title{
     color: #FD5B17;
 }
 
-.div3 p{
+.card-text{
     color: rgb(8, 28, 61);
 }
 
-.div1 :hover{
-    transform: translateY(-1px);
-    transition: 0.5s;
-}
 
-iframe{
-    width: 20em;
-}
 
 
 /* Media Query Section */
@@ -99,73 +90,67 @@ iframe{
 }
 
 /* footer */
-#servheadf {
+#servheadf{
     height: 20vh;
-    background: linear-gradient(rgba(8, 28, 61, 0.9),
-        rgba(8, 28, 61, 0.9)),
+    background: linear-gradient(
+        rgba(8, 28, 61, 0.9),
+        rgba(8, 28, 61, 0.9)
+      ),
       url("images/heading.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     margin-top: 5em;
-  
+
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
-  
-footer {
+  }
+  footer{
     width: 100%;
     padding: 2em;
-}
-  
-.footer_text {
-    width: 80%;
-}
+  }
 
-.footer_icon {
+  .footer_text{
+    width: 80%;
+
+  }
+  .footer_icon{
     width: 19%;
     text-align: right;
-}
-  
-@media screen and (max-width: 600px) {
-    #servheadf {
+
+  }
+
+  @media screen and (max-width: 600px) {
+    #servheadf{
       height: 10vh;
-  
+      
     }
-  
-    .footer_text p {
+    .footer_text p{
       font-size: 10px;
     }
-  
-    .footer_icon img {
+
+    .footer_icon img{
       width: 1em;
     }
+
+    
+    
+  }
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+    #servheadf{
+      height: 12vh;
+      
+    }
+    
+  
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
-    #servheadf {
-      height: 12vh;
-  
-    }
-  
-  
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  #servheadf{
+    height: 12vh;
+    
   }
-  
-  @media screen and (max-width: 1200px) and (min-width: 900px) {
-    #servheadf {
-      height: 12vh;
-  
-    }
-  
-  }
-  
-  
-  .navbar-container .hamburger-lines .line {
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background: #333;
-  }
+
+}

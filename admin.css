@@ -111,32 +111,91 @@
 .div5{
   display: flex;
   flex-wrap: wrap;
+  
   justify-content: space-evenly;
 }
 
 
-.div1{
+#div1{
   flex-wrap: wrap;
 }
+
 .card{
   margin-block: 2rem;
   border-radius: 10px;
-  flex-wrap: wrap;
+  border: none;
 }
 
 .card-img-top{
   height: 13rem;
 }
 
-.card-body h5{
-  color: #fd5b17;
-}
-
-.card-text table {
-  color: rgb(8, 28, 61);
-}
-
-
 table{
   width: 100%;
+}
+
+/* footer */
+#servheadf{
+  height: 20vh;
+  background: linear-gradient(
+      rgba(8, 28, 61, 0.9),
+      rgba(8, 28, 61, 0.9)
+    ),
+    url("images/heading.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: 5em;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer{
+  width: 100%;
+  padding: 2em;
+}
+
+.footer_text{
+  width: 80%;
+
+}
+.footer_icon{
+  width: 19%;
+  text-align: right;
+
+}
+
+@media screen and (max-width: 600px) {
+  #servheadf{
+    height: 10vh;
+    
+  }
+  .footer_text p{
+    font-size: 10px;
+  }
+
+  .footer_icon img{
+    width: 1em;
+  }
+
+  
+  
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  #servheadf{
+    height: 12vh;
+    
+  }
+  
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+#servheadf{
+  height: 12vh;
+  
+}
+
 }
