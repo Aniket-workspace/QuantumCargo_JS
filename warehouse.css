@@ -93,6 +93,7 @@ ul,li{
   height: 3rem;
   line-height: 3rem; 
   transition: all .5s ease-in-out;
+  opacity: 0.9;
   
 }
 
@@ -139,7 +140,12 @@ ul,li{
   list-style:none;
   z-index:2;
   margin-left: 2rem;
+  cursor: pointer;
   
+}
+
+.hov .main li{
+  cursor: pointer;
 }
 
 #div1{
@@ -164,7 +170,80 @@ ul,li{
 table{
   width: 100%;
 }
-.card{
+ .card{
   margin-block: 2rem;
-  border-radius: 1rem;
+  
+}
+table tr td{
+  color: rgb(99, 99, 99);
+}
+.card-title{
+  font-size: 20px;
+}
+
+
+/* footer */
+#servheadf{
+  height: 20vh;
+  background: linear-gradient(
+      rgba(8, 28, 61, 0.9),
+      rgba(8, 28, 61, 0.9)
+    ),
+    url("images/heading.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin-bottom: 0em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer{
+  width: 100%;
+  padding: 2em;
+}
+
+.con
+.footer_text{
+  width: 80%;
+
+}
+.footer_icon{
+  width: 19%;
+  text-align: right;
+
+}
+
+@media screen and (max-width: 600px) {
+  #servheadf{
+    height: 10vh;
+    
+  }
+  .footer_text p{
+    font-size: 10px;
+  }
+
+  .footer_icon img{
+    width: 1em;
+  }
+
+  
+  
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  #servheadf{
+    height: 12vh;
+    
+  }
+  
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+#servheadf{
+  height: 12vh;
+  
+}
+
 }
