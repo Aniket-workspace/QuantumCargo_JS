@@ -58,7 +58,10 @@ function calculatePrice() {
   };
 
   temporaryOrders.push(orderDetails);
+  displayOrderDetails(temporaryOrders);
   displayOrderTable(temporaryOrders);
+  orderNo(temporaryOrders);
+  
 
   var orderCard = document.createElement("div");
   orderCard.classList.add("order-card");
@@ -92,9 +95,21 @@ function calculatePrice() {
   document.getElementById("orderForm").reset();
 }
 
+
+function displayOrderDetails(orders) {
+  const orderDetailsContainer = document.getElementById("orderDetailsContainer");
+  orderDetailsContainer.innerHTML = '';
+  orderDetailsContainer.innerHTML = `
+    <h2>Order Details</h2>
+    <p><strong>Order ID:</strong> ${orderNumber}</p>
+  `;
+}
+
+
 function displayOrderTable(orders) {
   const orderTableContainer = document.getElementById("orderTableContainer");
   orderTableContainer.innerHTML = '';
+
 
   if (orders.length === 0) {
     return;
@@ -106,7 +121,7 @@ function displayOrderTable(orders) {
   const tableHeader = document.createElement("thead");
   tableHeader.innerHTML = `
     <tr>
-      <th>Order ID</th>
+      <th>Name of Organization</th>
       <th>Email</th>
       <th>Category</th>
       <th>Arrival Date</th>
@@ -120,13 +135,12 @@ function displayOrderTable(orders) {
   orders.forEach(order => {
     const row = document.createElement("tr");
     row.innerHTML = `
-    <td>${order.orderNumber}</td>
+      <td>${order.orgName}</td>
       <td>${order.email}</td>
       <td>${order.category}</td>
       <td>${order.dateReceive}</td>
       <td>$${order.totalPrice.toFixed(2)}</td>
       <td><button>Check Status</button></td>
-
     `;
     tableBody.appendChild(row);
   });
@@ -136,6 +150,9 @@ function displayOrderTable(orders) {
 }
 
 
-
+function orderNo(orders){
+  const ORN = document.getElementById("ord");
+  ORN.textContent = orderNumber;
+}
 
 

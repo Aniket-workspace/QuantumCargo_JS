@@ -14,6 +14,21 @@
       .order-table{
         font-size: 2rem;
       }
+      .order-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .order-table th, .order-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .order-table th {
+      background-color: #f2f2f2;
+    }
     </style>
 </head>
 
@@ -152,7 +167,9 @@
         </div>
         <div class="func-1 tab-content" id="div2">
             <h1>div 2</h1>
+            <div id="orderDetailsContainer"></div>
             <div id="orderTableContainer"></div>
+            
         </div>
         
         <div class="func-1 tab-content" id="div3">
