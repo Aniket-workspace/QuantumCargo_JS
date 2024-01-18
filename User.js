@@ -2,20 +2,28 @@ var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-content");
 
 function opentab(tabname) {
-    for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-    }
-    document.getElementById(tabname).classList.add("active-tab");
+  for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+const orderNumber = generateOrderNumber();
+function generateOrderNumber() {
+  return Math.floor(100000 + Math.random() * 900000);
 }
 
 
+
 // Ship
+let temporaryOrders = [];
 function calculatePrice() {
   const orgName = document.getElementById("orgName").value;
   const email = document.getElementById("email").value;
   const contactNo = document.getElementById("contactNo").value;
   const category = document.getElementById("category").value;
   const transport = document.getElementById("transport").value;
+  const dateReceive = document.getElementById("dateReceive").value;
   const weight = parseFloat(document.getElementById("weight").value);
   const distance = parseFloat(document.getElementById("distance").value);
   let pricePerKm;
@@ -34,6 +42,24 @@ function calculatePrice() {
       pricePerKm = 0;
   }
   var totalPrice = weight * distance * pricePerKm;
+
+  const orderDetails = {
+    orderNumber,
+    orgName,
+    email,
+    contactNo,
+    category,
+    transport,
+    weight,
+    dateTransport,
+    dateReceive,
+    distance,
+    totalPrice
+  };
+
+  temporaryOrders.push(orderDetails);
+  displayOrderTable(temporaryOrders);
+
   var orderCard = document.createElement("div");
   orderCard.classList.add("order-card");
   orderCard.innerHTML = `
@@ -60,8 +86,56 @@ function calculatePrice() {
         </tr>
     </table>
     `;
-    
+
 
   document.getElementById("orderCards").appendChild(orderCard);
   document.getElementById("orderForm").reset();
 }
+
+function displayOrderTable(orders) {
+  const orderTableContainer = document.getElementById("orderTableContainer");
+  orderTableContainer.innerHTML = '';
+
+  if (orders.length === 0) {
+    return;
+  }
+
+  const orderTable = document.createElement("table");
+  orderTable.classList.add("order-table");
+
+  const tableHeader = document.createElement("thead");
+  tableHeader.innerHTML = `
+    <tr>
+      <th>Order ID</th>
+      <th>Email</th>
+      <th>Category</th>
+      <th>Arrival Date</th>
+      <th>Total Price</th>
+      <th>Tracking Order</th>
+    </tr>
+  `;
+  orderTable.appendChild(tableHeader);
+
+  const tableBody = document.createElement("tbody");
+  orders.forEach(order => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+    <td>${order.orderNumber}</td>
+      <td>${order.email}</td>
+      <td>${order.category}</td>
+      <td>${order.dateReceive}</td>
+      <td>$${order.totalPrice.toFixed(2)}</td>
+      <td><button>Check Status</button></td>
+
+    `;
+    tableBody.appendChild(row);
+  });
+  orderTable.appendChild(tableBody);
+
+  orderTableContainer.appendChild(orderTable);
+}
+
+
+
+
+
