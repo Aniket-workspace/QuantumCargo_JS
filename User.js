@@ -58,7 +58,10 @@ function calculatePrice() {
   };
 
   temporaryOrders.push(orderDetails);
+  displayOrderDetails(temporaryOrders);
   displayOrderTable(temporaryOrders);
+  orderNo(temporaryOrders);
+  
 
   var orderCard = document.createElement("div");
   orderCard.classList.add("order-card");
@@ -93,11 +96,20 @@ function calculatePrice() {
 }
 
 
-// invoice
+function displayOrderDetails(orders) {
+  const orderDetailsContainer = document.getElementById("orderDetailsContainer");
+  orderDetailsContainer.innerHTML = '';
+  orderDetailsContainer.innerHTML = `
+    <h2>Order Details</h2>
+    <p><strong>Order ID:</strong> ${orderNumber}</p>
+  `;
+}
+
 
 function displayOrderTable(orders) {
   const orderTableContainer = document.getElementById("orderTableContainer");
   orderTableContainer.innerHTML = '';
+
 
   if (orders.length === 0) {
     return;
@@ -109,12 +121,12 @@ function displayOrderTable(orders) {
   const tableHeader = document.createElement("thead");
   tableHeader.innerHTML = `
     <tr>
-      <th><h3>Order ID</h3></th>
-      <th><h3>Email</h3></th>
-      <th><h3>Category</h3></th>
-      <th><h3>Arrival Date</h3></th>
-      <th><h3>Total Price</h3></th>
-      <th><h3>Tracking Order</h3></th>
+      <th>Name of Organization</th>
+      <th>Email</th>
+      <th>Category</th>
+      <th>Arrival Date</th>
+      <th>Total Price</th>
+      <th>Tracking Order</th>
     </tr>
   `;
   orderTable.appendChild(tableHeader);
@@ -123,13 +135,12 @@ function displayOrderTable(orders) {
   orders.forEach(order => {
     const row = document.createElement("tr");
     row.innerHTML = `
-    <td><p>${order.orderNumber}</p></td>
-      <td><p>${order.email}</p></td>
-      <td><p>${order.category}</p></td>
-      <td><p>${order.dateReceive}</p></td>
-      <td><p>${order.totalPrice.toFixed(2)}</p></td>
+      <td>${order.orgName}</td>
+      <td>${order.email}</td>
+      <td>${order.category}</td>
+      <td>${order.dateReceive}</td>
+      <td>$${order.totalPrice.toFixed(2)}</td>
       <td><button>Check Status</button></td>
-
     `;
     tableBody.appendChild(row);
   });
@@ -139,6 +150,9 @@ function displayOrderTable(orders) {
 }
 
 
-
+function orderNo(orders){
+  const ORN = document.getElementById("ord");
+  ORN.textContent = orderNumber;
+}
 
 
