@@ -447,6 +447,10 @@ button {
   font-size: 1.3rem;
 }
 
+#orderCards table{
+  min-width: 22rem;
+}
+
 /* img {
   max-width: 100%;
   height: auto;
