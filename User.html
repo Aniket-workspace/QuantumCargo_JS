@@ -24,14 +24,125 @@
       </div>
     <div class="main">
         <div class="func-1 tab-content active-tab" id="div1">
-            <h1>div 1</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi tempore sit
-            labore, alias pariatur! Maiores doloremque voluptates iste saepe rerum officia dignissimos rem quae libero
-            tenetur minus vel repellat hic, autem aliquid. Voluptate, est hic possimus necessitatibus, ex exercitationem
-            molestias ab quis suscipit nemo obcaecati quia voluptatem quasi doloremque neque vel explicabo fuga. Iste
-            vel consectetur pariatur alias sint consequatur modi, culpa, ipsum cupiditate voluptatem quos cumque ipsam
-            exercitationem nam libero necessitatibus voluptate sed. Facilis maxime cum cumque vero officia blanditiis
-            doloribus. Quibusdam, aliquam repellat quod dolorum est odit id porro delectus voluptatum sint, vero dicta
-            consequuntur tempore pariatur?
+          <div class="container">
+            
+            <div class="title-div">
+              <span>Transport Order Form</span>
+            </div>
+
+            <section class="ship">
+              <form id="orderForm">
+                <div class="name">
+                  <div class="org-name">
+                    <label for="orgName">Name of Organization</label><br>
+                    <span>Enter the name of organization</span>
+                  </div>
+                <input type="text" id="orgName" required>
+              </div>
+  
+                <div class="email">
+                  <div class="text">
+                    <label for="email">Email</label><br>
+                    <span>Enter Your email address</span>
+                  </div>
+                  <div class="input">
+                    <input type="email" id="email" placeholder="example@gmail.com" required>
+                  </div>
+                </div>
+          
+                <div class="contact">
+                  <div class="text">
+                    <label for="contactNo">Contact No</label><br>
+                    <span>Enter Your contact number</span>
+                  </div>
+                  <div class="input">
+                    <input type="tel" id="contactNo" placeholder="+91 XXXXX XXXXX" required>
+                  </div>
+                </div>
+          
+                <div class="type">
+                  <div class="text">
+                    <label for="category">Type of Category</label><br>
+                    <span>Select the category of product</span>
+                  </div>
+                  <div class="input">
+                    <select id="category" class="form-select" required>
+                      <option value="food">Food</option>
+                      <option value="metal">Metal</option>
+                      <option value="heavyMachinery">Heavy Machinery</option>
+                      <option value="lightVehicles">Light Vehicles</option>
+                      <option value="clothing">Clothing</option>
+                    </select>
+                  </div>
+                </div>
+          
+                <div class="trans">
+                  <div class="text">
+                    <label for="transport">Type of Transport</label><br>
+                    <span>Select the type of transport</span>
+                  </div>
+                  <div class="input">
+                    <select id="transport" required>
+                      <option value="byAir">By Air</option>
+                      <option value="byWater">By Water</option>
+                      <option value="byRoad">By Road</option>
+                    </select>
+                  </div>
+                </div>
+          
+                <div class="weight">
+                  <div class="text">
+                    <label for="weight">Weight in tons</label><br>
+                    <span>Enter Your product weight</span>
+                  </div>
+                  <div class="input">
+                    <input type="number" id="weight" required>
+                  </div>
+                </div>
+          
+                <div class="date-tr">
+                  <div class="text">
+                    <label for="dateTransport">Date of Transport</label><br>
+                    <span>Enter the date of transport</span>
+                  </div>
+                  <div class="input">
+                    <input type="date" id="dateTransport" required>
+                  </div>
+                </div>
+          
+                <div class="date-re">
+                  <div class="text">
+                    <label for="dateReceive">Date of Receive</label><br>
+                    <span>Enter the date of receive</span>
+                  </div>
+                  <div class="input">
+                    <input type="date" id="dateReceive" required>
+                  </div>
+                </div>
+          
+                <div class="dist">
+                  <div class="text">
+                    <label for="distance">Distance in km</label><br>
+                    <span>Enter the distance of Destination</span>
+                  </div>
+                  <div class="input">
+                    <input type="number" id="distance" required>
+                  </div>
+                </div>
+          
+                <div class="button">
+                  <div class="submit">
+                    <button type="button" onclick="calculatePrice()">Submit</button>
+                  </div>
+                  <div class="reset">
+                    <button type="reset">Reset</button>
+                  </div>
+                </div>
+              </form>
+            </section>
+        
+            <div id="orderCards"></div>
+          </div>
         </div>
         <div class="func-1 tab-content" id="div2">
             <h1>div 2</h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique harum perspiciatis
