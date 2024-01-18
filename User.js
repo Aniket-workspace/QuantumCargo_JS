@@ -154,5 +154,3 @@ function orderNo(orders){
   const ORN = document.getElementById("ord");
   ORN.textContent = orderNumber;
 }
-
-
