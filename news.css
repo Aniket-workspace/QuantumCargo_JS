@@ -37,19 +37,21 @@
   margin-block: 2em;
   text-align: justify;
   border: none;
+  width: 27%;
+  border-bottom: #fd5b17 4px solid;
 }
-.card-title{
+/* .card-title{
     color: #FD5B17;
 }
 
 .card-text{
     color: rgb(8, 28, 61);
-}
+} */
 
 
+/* 
 
-
-/* Media Query Section */
+ Media Query Section 
 @media screen and (max-width: 800px) {
     iframe{
         width: 15em;
@@ -87,7 +89,7 @@
         flex-direction: column;
         text-align: center;
     }
-}
+} */
 
 /* footer */
 #servheadf{
