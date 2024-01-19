@@ -17,6 +17,7 @@ function generateOrderNumber() {
 
 // Ship
 let temporaryOrders = [];
+let submitCount = 1;
 function calculatePrice() {
   const orgName = document.getElementById("orgName").value;
   const email = document.getElementById("email").value;
@@ -54,12 +55,14 @@ function calculatePrice() {
     dateTransport,
     dateReceive,
     distance,
-    totalPrice
+    totalPrice,
+    submitCount
   };
 
   temporaryOrders.push(orderDetails);
   displayOrderDetails(temporaryOrders);
   displayOrderTable(temporaryOrders);
+  displayOrdercount(temporaryOrders);
   orderNo(temporaryOrders);
   
 
@@ -90,7 +93,7 @@ function calculatePrice() {
     </table>
     `;
 
-
+    submitCount++;
   document.getElementById("orderCards").appendChild(orderCard);
   document.getElementById("orderForm").reset();
 }
@@ -155,4 +158,8 @@ function orderNo(orders){
   ORN.textContent = orderNumber;
 }
 
+function displayOrdercount(orders){
+  const total_pro = document.getElementById("total-product");
+  total_pro.textContent = submitCount;
+}
 
