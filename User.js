@@ -103,7 +103,7 @@ function displayOrderDetails(orders) {
   const orderDetailsContainer = document.getElementById("orderDetailsContainer");
   orderDetailsContainer.innerHTML = '';
   orderDetailsContainer.innerHTML = `
-    <h2>Order Details</h2>
+    <div><span>Order Details</span></div>
     <p><strong>Order ID:</strong> ${orderNumber}</p>
   `;
 }
@@ -143,7 +143,7 @@ function displayOrderTable(orders) {
       <td>${order.category}</td>
       <td>${order.dateReceive}</td>
       <td>$${order.totalPrice.toFixed(2)}</td>
-      <td><button>Check Status</button></td>
+      <td><button>Status</button></td>
     `;
     tableBody.appendChild(row);
   });

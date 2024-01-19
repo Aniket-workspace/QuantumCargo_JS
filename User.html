@@ -10,39 +10,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>User Session</title>
-    <style>
-      .order-table{
-        font-size: 2rem;
-      }
-      .order-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    .order-table th, .order-table td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: left;
-    }
-
-    .order-table th {
-      background-color: #f2f2f2;
-    }
-    </style>
+    
 </head>
 
 <body>
 
+  <!-- navbar -->
     <div class="nav_bar">
         <ul class="nav-links">
             <li class="center"><a href="#" onclick="opentab('div1')">Shipment</a></li>
-            <li class="center"><a href="#" onclick="opentab('div2')">List</a></li>
-            <li class="center"><a href="#" onclick="opentab('div3')">Payment</a></li>
+            <li class="center"><a href="#" onclick="opentab('div2')">Payment</a></li>
+            <li class="center"><a href="#" onclick="opentab('div3')">Invoice</a></li>
             <li class="center"><a href="index.html">Log Out</a></li>
           </ul>
       </div>
     <div class="main">
+
+      <!-- shipment -->
         <div class="func-1 tab-content active-tab" id="div1">
           <div class="container">
             
@@ -158,6 +142,10 @@
                     <button type="reset">Reset</button>
                   </div>
                 </div>
+
+                <div class="proceed">
+                  <button type="button" onclick="opentab('div2')">Proceed</button>
+                </div>
               </form>
             </section>
         
@@ -165,14 +153,10 @@
 
           </div>
         </div>
-        <div class="func-1 tab-content" id="div2">
-            <h1>div 2</h1>
-            <div id="orderDetailsContainer"></div>
-            <div id="orderTableContainer"></div>
-            
-        </div>
         
-        <div class="func-1 tab-content" id="div3">
+
+        <!-- payment -->
+        <div class="func-1 tab-content" id="div2">
           
           <div id="page" class="site">
             <div class="container">
@@ -234,7 +218,7 @@
                             oninput="this.value=this.value.slice(0,this.dataset.maxlength)">
                         </div>
                       </div>
-                      <button>Pay Now</button>
+                      <button onclick="opentab('div3')">Pay Now</button>
                     </form>
                   </div>
                   <div class="right">
@@ -298,6 +282,15 @@
     </div>
         </div>
         
+
+        <!-- invoice -->
+        <div class="func-1 tab-content" id="div3">
+          <div class="invoice">
+          <div id="orderDetailsContainer"></div>
+          <div id="orderTableContainer"></div>
+          </div>
+          
+      </div>
     </div>
 
 
