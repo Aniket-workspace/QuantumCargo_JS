@@ -40,6 +40,7 @@
   width: 27%;
   border-bottom: #fd5b17 4px solid;
 }
+<<<<<<< HEAD
 /* .card-title{
     color: #FD5B17;
 }
@@ -47,6 +48,8 @@
 .card-text{
     color: rgb(8, 28, 61);
 } */
+=======
+>>>>>>> 19d0e7e52147e36a4628c70092e629a343dd471a
 
 
 /* 
@@ -57,6 +60,7 @@
         width: 15em;
     }
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 600px) {
     iframe{
@@ -91,6 +95,8 @@
     }
 } */
 
+=======
+>>>>>>> 19d0e7e52147e36a4628c70092e629a343dd471a
 /* footer */
 #servheadf{
     height: 20vh;

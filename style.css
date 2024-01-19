@@ -127,6 +127,8 @@ body {
   text-align: center;
   background-color: rgb(6, 28, 61);
   opacity: 0.9;
+  z-index: 1;
+
 }
 
 .navbar .menu-items li {
